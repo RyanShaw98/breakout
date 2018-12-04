@@ -3,10 +3,7 @@
  */
 
 public class Breakout {
-
     public static void main(String[] args) {
-        new GameFrame(new GameView());
+        new GameFrame(new MenuView());
     }
-
-
 }

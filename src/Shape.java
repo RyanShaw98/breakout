@@ -1,7 +1,8 @@
-public abstract class Shape {
-    int pos_x;
-    int pos_y;
+abstract class Shape {
+    double pos_x;
+    double pos_y;
 
-    int getX() {return pos_x;}
-    int getY() {return pos_y;}
+    double getX() {return pos_x;}
+    double getY() {return pos_y;}
+
 }
