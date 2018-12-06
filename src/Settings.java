@@ -3,7 +3,7 @@ import java.util.Random;
 public interface Settings {
 
     // Frame settings
-    String FRAME_TITLE = "Ryan Shaw - 1605008";
+    String FRAME_TITLE = "Ryan Shaw (1605008)";
     int FRAME_WIDTH = 300;
     int FRAME_HEIGHT = 500;
     int HOR_INSET = 16;

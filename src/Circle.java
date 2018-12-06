@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  * This class will contain code for the ball
  */
@@ -36,5 +38,10 @@ class Circle extends Shape implements Settings {
 
     void setDirectionY(int y) {
         directionY = y;
+    }
+
+    void draw(Graphics g) {
+        g.setColor(Color.WHITE);
+        g.fillOval((int) this.pos_x, (int) this.pos_y, (int) CIR_SIZE, (int) CIR_SIZE);
     }
 }

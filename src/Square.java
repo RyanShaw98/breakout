@@ -1,8 +1,10 @@
+import java.awt.*;
+
 /**
  * The Square class will contain code for the squares that will break when hit by the ball
  */
 
-public class Square extends Shape implements Settings {
+class Square extends Shape implements Settings {
 
     private boolean broken;
     private int life;
@@ -72,5 +74,18 @@ public class Square extends Shape implements Settings {
         }
 
         return 0;
+    }
+
+    void draw(Graphics g) {
+        if (this.getLife() == 3) {
+            g.setColor(Color.GREEN);
+        } else if (this.getLife() == 2) {
+            g.setColor(Color.YELLOW);
+        } else {
+            g.setColor(Color.RED);
+        }
+        if (!this.isBroken()) {
+            g.fill3DRect((int) pos_x, (int) pos_y, (int) SQUARE_SIZE, (int) SQUARE_SIZE, true);
+        }
     }
 }
