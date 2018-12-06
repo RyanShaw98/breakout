@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 class MenuView extends JComponent implements Settings {
 
@@ -78,29 +76,9 @@ class MenuView extends JComponent implements Settings {
         gbc.insets = new Insets(50, 0, 0, 0);
 
         JButton startBtn = new JButton("Start");
-        startBtn.addActionListener(new ButtonHandler(this));
+        startBtn.addActionListener(new InputMouseHandler(this));
         startBtn.setBackground(Color.BLACK);
         startBtn.setForeground(Color.WHITE);
         add(startBtn, gbc);
-    }
-}
-
-class ButtonHandler implements ActionListener {
-    private MenuView app;
-
-    ButtonHandler(MenuView app) {
-        this.app = app;
-    }
-
-    public void actionPerformed(ActionEvent e) {
-        if (app.nameTField.getText().length() != 0) {
-            String playerName = app.nameTField.getText().trim(); // .strip()
-            JFrame topFrame = (JFrame) SwingUtilities.getWindowAncestor(app);
-            topFrame.remove(app);
-            topFrame.add(new GameView(playerName, app.bg.getSelection().getActionCommand()));
-            topFrame.revalidate();
-        } else {
-            JOptionPane.showMessageDialog(app, "Please enter a name");
-        }
     }
 }

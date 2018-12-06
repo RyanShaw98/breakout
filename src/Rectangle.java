@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  * The Rectangle class contains code for the paddle
  */
@@ -30,8 +32,13 @@ class Rectangle extends Shape implements Settings {
             pos_x = 0;
         }
 
-        if (pos_x >= (FRAME_WIDTH - (REC_WIDTH) - HOR_INSET)) {
-            pos_x = FRAME_WIDTH - ((int) REC_WIDTH) - HOR_INSET;
+        if (pos_x >= (FRAME_WIDTH - REC_WIDTH - HOR_INSET)) {
+            pos_x = FRAME_WIDTH - REC_WIDTH - HOR_INSET;
         }
+    }
+
+    void draw(Graphics g) {
+        g.setColor(Color.WHITE);
+        g.fill3DRect((int) this.pos_x, (int) this.pos_y, (int) REC_WIDTH, (int) REC_HEIGHT, true);
     }
 }
