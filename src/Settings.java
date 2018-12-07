@@ -10,8 +10,8 @@ public interface Settings {
     int VER_INSET = 31;
 
     // Rectangle settings
-    double REC_WIDTH = 50.0;
-    double REC_HEIGHT = 2.0;
+    double REC_WIDTH = 60.0;
+    double REC_HEIGHT = 5.0;
     Random rand = new Random();
     double buff = rand.nextInt((int) (FRAME_WIDTH - REC_WIDTH - HOR_INSET));
     double REC_START_POS_X = buff;
@@ -33,5 +33,5 @@ public interface Settings {
 
     // LeaderBoard settings
     double LAST_GAME_STATS_POS_Y = 0.1;
-    double LEADER_BOARD_POS_Y = 0.2;
+    double LEADER_BOARD_POS_Y = 0.25;
 }

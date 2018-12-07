@@ -2,17 +2,17 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class LeaderBoard implements Settings {
-    private int score;
+class LeaderBoard implements Settings, DisplayLeaderBoard {
+    private double score;
     private String name;
 
-    LeaderBoard(String name, int score) {
+    LeaderBoard(String name, double score) {
         this.score = score;
         this.name = name;
     }
 
     @SuppressWarnings("TryWithIdenticalCatches")
-    ArrayList<ArrayList<String>> getAllScores() {
+    public ArrayList<ArrayList<String>> getAllScores() {
         ArrayList<ArrayList<String>> playerScores = new ArrayList<>();
         try {
             BufferedReader reader = new BufferedReader(new FileReader(FILE_PATH));
@@ -36,7 +36,7 @@ class LeaderBoard implements Settings {
         return playerScores;
     }
 
-    ArrayList<ArrayList<String>> getTopTen() {
+    public ArrayList<ArrayList<String>> getTopTen() {
         ArrayList<ArrayList<String>> topTen = getAllScores();
         topTen.sort(new ListComparator());
 
@@ -45,6 +45,7 @@ class LeaderBoard implements Settings {
         }
         return topTen;
     }
+
     void saveScore() {
         try {
             String[] nameSplit = name.split("\\s+");

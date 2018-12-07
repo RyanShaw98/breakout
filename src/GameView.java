@@ -16,12 +16,13 @@ public class GameView extends JComponent implements Settings {
     private int gameOver = 0;
     private Timer timer = new Timer();
     private Square squares[];
-    private int score = 0;
+    private double score = 0;
+    private String difficulty;
 
     GameView(String name, String difficulty) {
         InputKeyHandler bindings = new InputKeyHandler(this);
         bindings.setKeyBinds();
-
+        this.difficulty = difficulty;
         playerName = name;
         squares = new Square[AMOUNT_OF_SQUARES];
         timer.scheduleAtFixedRate(new ScheduleTask(), 1000, setDifficulty(difficulty));
@@ -116,11 +117,25 @@ public class GameView extends JComponent implements Settings {
 
     }
 
+    private double scoreMultiplier(String difficulty, double score) {
+        switch (difficulty) {
+            case "Easy":
+                return 1.1 * score;
+            case "Medium":
+                return 1.5 * score;
+            case "Hard":
+                return 2 * score;
+        }
+        return score;
+    }
+
     private void drawGameOver(Graphics g) {
         g.setColor(Color.WHITE);
         String winMsg = "You win! (+10 points)";
         String loseMsg = "You lose!";
+        score = scoreMultiplier(difficulty, score);
         String scoreMsg = playerName + ", you scored: " + String.valueOf(score);
+        String allTimeMsg = "Top 10 Scores of All Time:";
         final int POS_INSET = 3;
         if (gameOver == -1) {
             g.drawString(loseMsg, (FRAME_WIDTH - g.getFontMetrics().stringWidth(loseMsg) - HOR_INSET) / 2, (int) (FRAME_HEIGHT * LAST_GAME_STATS_POS_Y));
@@ -129,6 +144,8 @@ public class GameView extends JComponent implements Settings {
             g.drawString(winMsg, (FRAME_WIDTH - g.getFontMetrics().stringWidth(winMsg) - HOR_INSET) / 2, (int) (FRAME_HEIGHT * LAST_GAME_STATS_POS_Y));
         }
         g.drawString(scoreMsg, (FRAME_WIDTH - g.getFontMetrics().stringWidth(scoreMsg) - HOR_INSET) / 2, (int) (FRAME_HEIGHT * (LAST_GAME_STATS_POS_Y + 0.05)));
+
+        g.drawString(allTimeMsg, (FRAME_WIDTH - g.getFontMetrics().stringWidth(allTimeMsg) - HOR_INSET) / 2, (int) (FRAME_HEIGHT * (LAST_GAME_STATS_POS_Y + 0.1)));
 
         LeaderBoard leaderboard = new LeaderBoard(playerName, score);
         leaderboard.saveScore();
@@ -149,8 +166,7 @@ public class GameView extends JComponent implements Settings {
                 g.setColor(Color.WHITE);
             }
             StringBuilder sb = new StringBuilder();
-            String posString = position + ". "; // TODO Fix position not displaying
-            String leaderBoardMsg = "";
+            String leaderBoardMsg = sb.insert(0, "#" + position + " ").toString();
             for (int i = 0; i < nameAndScore.size(); i++) {
                 leaderBoardMsg = sb.append(nameAndScore.get(i)).toString();
                 if (i < nameAndScore.size() - 2) {
@@ -163,14 +179,7 @@ public class GameView extends JComponent implements Settings {
             colourCount++;
             leaderBoardMsgPosY += 0.05;
             position++;
-        } // TODO add play again button
-//        setLayout(new GridBagLayout());
-//        GridBagConstraints gbc = new GridBagConstraints();
-//        gbc.gridx = 0;
-//        gbc.gridy = 0;
-//        gbc.fill = GridBagConstraints.HORIZONTAL;
-//        JButton playAgain = new JButton();
-//        add(playAgain, gbc);
+        }
     }
 
     private class ScheduleTask extends TimerTask {
