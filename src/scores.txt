@@ -1,49 +1,8 @@
-Ryan Shaw 73
-VV  1
-Ryan  3
-Ryan  4
-Ryan  12
-RyanTest 06  90
-Tester  2
-vsdvs  3
-TEstCollision  6
-CT  26
-fwfwef  70
-TTT  3
-oi  1
-BT2  23
-BT3  1
-BT$  28
-oin  3
-ScoresTEst  32
-DT  6
-SquareDrawTest  24
-iub  3
-lbt  1
-tyyjtyj  1
-fefe  3
-fvfvf  2
-cscsc  2
-fvbfvf  3
-fefe  1
-Zia  4
-FrameSize  12
-kb;kb  13
-vv dv  89
-dcdcdcdcdc  20
-xcvxvxvxv  4
-dvdv  1
-dvfvfdv  2
-vfvfv  1
-vdvdvdv  1
-Ryan  1
-vsdvs  1
-VDVV  1
-xc cx  1
-vfvfvfv  1
-cdcdc  1
-Ryan  10
-Ryan  10
-Ryan  8.0
-cdc  20.0
-fvfv  6.0
+Ryan  4.5
+Ryan  4.5
+Chelsea  9.0
+Ryan  5.2
+Owen  3.9
+Harry  2.6
+Zia  30.0
+Ryan Shaw  2.6
