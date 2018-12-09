@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -44,9 +45,9 @@ public class GameView extends JComponent implements Settings {
     private int setDifficulty(String difficulty) {
         switch (difficulty) {
             case "Easy":
-                return 10;
+                return 8;
             case "Medium":
-                return 7;
+                return 6;
             case "Hard":
                 return 4;
         }
@@ -104,6 +105,20 @@ public class GameView extends JComponent implements Settings {
         }
     }
 
+    private double scoreMultiplier(String difficulty, double score) {
+        DecimalFormat scoreFormat = new DecimalFormat("#.#");
+        switch (difficulty) {
+            case "Easy":
+                return Double.parseDouble(scoreFormat.format(1.0 * score));
+            case "Medium":
+                return Double.parseDouble(scoreFormat.format(1.3 * score));
+            case "Hard":
+                return Double.parseDouble(scoreFormat.format(1.5 * score));
+        }
+
+        return Double.parseDouble(scoreFormat.format(score));
+    }
+
     private void drawInGame(Graphics g) {
         paddle.draw(g);
         ball.draw(g);
@@ -112,29 +127,28 @@ public class GameView extends JComponent implements Settings {
         }
 
         g.setColor(Color.WHITE);
-        g.drawString(String.valueOf(score), (int) ((FRAME_WIDTH * 0.95) - HOR_INSET), (int) ((FRAME_HEIGHT * 0.98) - VER_INSET));
+        g.drawString(String.valueOf((int) score), (int) ((FRAME_WIDTH * 0.95) - HOR_INSET), (int) ((FRAME_HEIGHT * 0.98) - VER_INSET));
 
 
-    }
-
-    private double scoreMultiplier(String difficulty, double score) {
-        switch (difficulty) {
-            case "Easy":
-                return 1.1 * score;
-            case "Medium":
-                return 1.5 * score;
-            case "Hard":
-                return 2 * score;
-        }
-        return score;
     }
 
     private void drawGameOver(Graphics g) {
         g.setColor(Color.WHITE);
-        String winMsg = "You win! (+10 points)";
+        String winMsg = "You win!";
         String loseMsg = "You lose!";
         score = scoreMultiplier(difficulty, score);
-        String scoreMsg = playerName + ", you scored: " + String.valueOf(score);
+        String scoreMsg = "";
+        switch (difficulty) {
+            case "Easy":
+                scoreMsg = playerName + ", you scored: " + score + " (Easy x1.0)";
+                break;
+            case "Medium":
+                scoreMsg = playerName + ", you scored: " + score + " (Medium x1.3)";
+                break;
+            case "Hard":
+                scoreMsg = playerName + ", you scored: " + score + " (Hard x1.5)";
+                break;
+        }
         String allTimeMsg = "Top 10 Scores of All Time:";
         final int POS_INSET = 3;
         if (gameOver == -1) {

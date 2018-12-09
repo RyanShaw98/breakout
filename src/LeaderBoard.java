@@ -40,7 +40,7 @@ class LeaderBoard implements Settings, DisplayLeaderBoard {
         ArrayList<ArrayList<String>> topTen = getAllScores();
         topTen.sort(new ListComparator());
 
-        while (topTen.size() != 10) {
+        while (topTen.size() > 10) {
             topTen.remove(10);
         }
         return topTen;
