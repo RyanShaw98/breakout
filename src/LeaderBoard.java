@@ -2,15 +2,29 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Manages the leader board which is stored in an external text file.
+ */
 class LeaderBoard implements Settings, DisplayLeaderBoard {
     private double score;
     private String name;
 
+    /**
+     * Constructor that gets the player name and score.
+     *
+     * @param name  player name
+     * @param score player score
+     */
     LeaderBoard(String name, double score) {
         this.score = score;
         this.name = name;
     }
 
+    /**
+     * Stores all scores from text file in a list of list, where each text file line is separated by white space.
+     *
+     * @return a list of list where each of the second lists contains a single players score.
+     */
     @SuppressWarnings("TryWithIdenticalCatches")
     public ArrayList<ArrayList<String>> getAllScores() {
         ArrayList<ArrayList<String>> playerScores = new ArrayList<>();
@@ -36,6 +50,11 @@ class LeaderBoard implements Settings, DisplayLeaderBoard {
         return playerScores;
     }
 
+    /**
+     * Gets the top ten scores of all time using the 'getAllScores' method and sorts the result using the 'ListComparator' class.
+     *
+     * @return a sorted list of lists containing the top ten scores of all time.
+     */
     public ArrayList<ArrayList<String>> getTopTen() {
         ArrayList<ArrayList<String>> topTen = getAllScores();
         topTen.sort(new ListComparator());
@@ -46,6 +65,9 @@ class LeaderBoard implements Settings, DisplayLeaderBoard {
         return topTen;
     }
 
+    /**
+     * Formats the players name by removing un-necessary whitespace and then writes the formatted name and  the players score to an external text file.
+     */
     void saveScore() {
         try {
             String[] nameSplit = name.split("\\s+");

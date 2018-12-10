@@ -6,7 +6,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * The GameView class displays the game
+ * The GameView class displays the game and leader board.
  */
 
 public class GameView extends JComponent implements Settings {
@@ -42,6 +42,12 @@ public class GameView extends JComponent implements Settings {
         }
     }
 
+    /**
+     * Sets timer period which controls how fast the ball and paddle move - lower numbers increase difficulty.
+     *
+     * @param difficulty game difficulty as set by menu radio buttons.
+     * @return int value that represents the time in milliseconds between timer executions.
+     */
     private int setDifficulty(String difficulty) {
         switch (difficulty) {
             case "Easy":
@@ -54,12 +60,18 @@ public class GameView extends JComponent implements Settings {
         return 10;
     }
 
+    /**
+     * Checks to see if the ball is below the paddle and if so, end the game with a defeat.
+     */
     private void ballOutOfBounds() {
         if (ball.getY() > paddle.getY()) {
             setGameOver(-1);
         }
     }
 
+    /**
+     * Checks to see if all the bricks are broken and if so, end the game with a victory.
+     */
     private void allBricksBroken() {
         for (int i = 0, j = 0; i < AMOUNT_OF_SQUARES; i++) {
             if (squares[i].isBroken()) {
@@ -72,11 +84,20 @@ public class GameView extends JComponent implements Settings {
         }
     }
 
+    /**
+     * Ends the game and cancels the game timer.
+     *
+     * @param x is the state of game over, '1' is a win, '0' is still in game and '-1' is a loss.
+     */
     private void setGameOver(int x) {
         gameOver = x;
         timer.cancel();
     }
 
+    /**
+     * Uses the 'CollisionDetector' class to check for collisions between the paddle and ball and bricks and ball.
+     * If the ball collides with a brick it will remove a life from the corresponding brick and destroy it if necessary.
+     */
     private void collisionDetector() {
         // Collision detector for paddle and ball
         CollisionDetector detector = new CollisionDetector(paddle, ball);
@@ -97,6 +118,11 @@ public class GameView extends JComponent implements Settings {
         }
     }
 
+    /**
+     * Paints the component which consists of the 'drawInGame' and 'drawGameOver' graphics methods.
+     *
+     * @param g graphics object.
+     */
     public void paintComponent(Graphics g) {
         if (gameOver == 0) {
             drawInGame(g);
@@ -105,6 +131,13 @@ public class GameView extends JComponent implements Settings {
         }
     }
 
+    /**
+     * Calculates the final score by multiplying it by a value that corresponds to the difficulty the player selected from the menu.
+     *
+     * @param difficulty the player selected difficulty.
+     * @param score      the final score of the player before multiplication.
+     * @return a double of the score multiplied by the multiplier.
+     */
     private double scoreMultiplier(String difficulty, double score) {
         DecimalFormat scoreFormat = new DecimalFormat("#.#");
         switch (difficulty) {
@@ -119,6 +152,11 @@ public class GameView extends JComponent implements Settings {
         return Double.parseDouble(scoreFormat.format(score));
     }
 
+    /**
+     * Draws the ball, paddle and using the encapsulated draw methods of each shape and displays the score in the bottom right.
+     *
+     * @param g graphics object.
+     */
     private void drawInGame(Graphics g) {
         paddle.draw(g);
         ball.draw(g);
@@ -132,9 +170,14 @@ public class GameView extends JComponent implements Settings {
 
     }
 
+    /**
+     * Displays an appropriate end game message along with the players score and finally, displays the top ten scores of all time.
+     *
+     * @param g graphics object.
+     */
     private void drawGameOver(Graphics g) {
         g.setColor(Color.WHITE);
-        String winMsg = "You win!";
+        String winMsg = "You win! (+10 points)";
         String loseMsg = "You lose!";
         score = scoreMultiplier(difficulty, score);
         String scoreMsg = "";
@@ -196,6 +239,9 @@ public class GameView extends JComponent implements Settings {
         }
     }
 
+    /**
+     * This class contains the tasks that should be ran by the timer
+     */
     private class ScheduleTask extends TimerTask {
         @Override
         public void run() {

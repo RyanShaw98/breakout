@@ -6,3 +6,4 @@ Owen  3.9
 Harry  2.6
 Zia  30.0
 Ryan Shaw  2.6
+Ryan  15.6

@@ -1,14 +1,19 @@
 import java.awt.*;
 
 /**
- * The Square class will contain code for the squares that will break when hit by the ball
+ * 'Square' creates a brick and defines its state, life points, whether it contains a give co-ordinate and how it should be drawn.
  */
-
 class Square extends Shape implements Settings {
 
     private boolean broken;
     private int life;
 
+    /**
+     * Constructor that sets the brick's default values.
+     *
+     * @param pos_x x position.
+     * @param pos_y y position.
+     */
     Square(double pos_x, double pos_y) {
         this.pos_x = pos_x;
         this.pos_y = pos_y;
@@ -16,20 +21,44 @@ class Square extends Shape implements Settings {
         life = 3;
     }
 
+    /**
+     * @return a boolean that states if the brick has been broken.
+     */
     boolean isBroken() {
         return broken;
     }
 
+    /**
+     * Sets the brick to broken (Usually when the brick has ran out of lives).
+     */
     void setBroken() {
         broken = true;
     }
 
-    int getLife() {return life;}
+    /**
+     * @return how many lives the brick has remaining.
+     */
+    int getLife() {
+        return life;
+    }
 
+    /**
+     * Deduct one life from the brick.
+     */
     void removeLife() {
         life--;
     }
 
+    /**
+     * Checks to see if the brick has a co-ordinate and if so, where abouts
+     * does that co-ordinate lie within the brick; it will split each face into
+     * two parts and then searches every part (for a total of eight) for the given
+     * co-ordinate.
+     *
+     * @param x co-ordinate.
+     * @param y co-ordinate.
+     * @return an int referring to where the co-ordinate was found, or '0' if it was not found.
+     */
     int hasPoint(double x, double y) {
         double half = SQUARE_SIZE * 0.5;
 
@@ -76,15 +105,20 @@ class Square extends Shape implements Settings {
         return 0;
     }
 
+    /**
+     * If the brick is not broken it draws the brick in either green, yellow or red depending on the color at the specified position and at the specified size.
+     *
+     * @param g
+     */
     void draw(Graphics g) {
-        if (this.getLife() == 3) {
-            g.setColor(Color.GREEN);
-        } else if (this.getLife() == 2) {
-            g.setColor(Color.YELLOW);
-        } else {
-            g.setColor(Color.RED);
-        }
         if (!this.isBroken()) {
+            if (this.getLife() == 3) {
+                g.setColor(Color.GREEN);
+            } else if (this.getLife() == 2) {
+                g.setColor(Color.YELLOW);
+            } else {
+                g.setColor(Color.RED);
+            }
             g.fill3DRect((int) pos_x, (int) pos_y, (int) SQUARE_SIZE, (int) SQUARE_SIZE, true);
         }
     }

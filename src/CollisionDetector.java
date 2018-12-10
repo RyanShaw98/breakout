@@ -1,18 +1,38 @@
+/**
+ * Handles the collision detection between the paddle, ball and bricks.
+ */
 class CollisionDetector implements Settings {
     private Square brick;
     private Rectangle paddle;
     private Circle ball;
 
+    /**
+     * Constructor for the paddle and ball.
+     *
+     * @param paddle game paddle.
+     * @param ball   game ball.
+     */
     CollisionDetector(Rectangle paddle, Circle ball) {
         this.paddle = paddle;
         this.ball = ball;
     }
 
+    /**
+     * Constructor for the bricks and ball.
+     *
+     * @param brick game brick.
+     * @param ball  game ball.
+     */
     CollisionDetector(Square brick, Circle ball) {
         this.brick = brick;
         this.ball = ball;
     }
 
+    /**
+     * Checks for a collision between the ball and paddle. If the two have collided, it will change the x and y directional values of the ball
+     * depending on where it hit the paddle (left side, center or right side). It will check to see if the bottom left co-ordinate of the ball has collided
+     * with the paddle as well as the bottom right co-ordinate of the ball so that the ball does not behave unexpectedly and clip through the paddle.
+     */
     void checkCollisionBallAndPaddle() {
         double botBallXLeft = ball.getX() + (CIR_SIZE * 0.5); // Left side
         double botBallXRight = ball.getX() + (CIR_SIZE * 0.5); // Right side
@@ -43,6 +63,13 @@ class CollisionDetector implements Settings {
         }
     }
 
+    /**
+     * Sets the x and y directional values of the ball depending on which brick face (top, left, bottom, right)
+     * and which part of the face (top side or bottom side, left side or right side) the ball collided with.
+     * @param x co-ordinate of the ball.
+     * @param y co-ordinate of the ball.
+     * @param brick game brick.
+     */
     private void setBallDirection(double x, double y, Square brick) {
         switch (brick.hasPoint(x, y)) {
             case 1:
@@ -64,6 +91,10 @@ class CollisionDetector implements Settings {
         }
     }
 
+    /**
+     * Checks to see if the ball has collided with a brick; if it has, then it sets the directional values of the ball using the 'setBallDirection' method.
+     * @return a boolean value where true is the ball has collided with a brick and false where the ball has not collided with a brick.
+     */
     boolean checkCollisionBallAndBrick() {
         if (brick.hasPoint(ball.getX(), ball.getY()) > 0) { // Top left of ball
             setBallDirection(ball.getX(), ball.getY(), brick);

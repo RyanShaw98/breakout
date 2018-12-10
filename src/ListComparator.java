@@ -1,6 +1,9 @@
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * Used to sort leader board scores list.
+ */
 public class ListComparator implements Comparator<List<String>> {
 
     @Override

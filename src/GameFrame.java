@@ -2,11 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * This class defines the frame settings
+ * Defines the frame settings
  */
 
 class GameFrame extends JFrame implements Settings {
 
+    /**
+     * Constructor that sets the desired values of the frame.
+     *
+     * @param frame either the 'menuView' or 'gameView' JComponent.
+     */
     GameFrame(JComponent frame) {
         setTitle(FRAME_TITLE);
         getContentPane().setBackground(Color.BLACK);

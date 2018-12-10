@@ -1,5 +1,5 @@
 /**
- * This is the main class
+ * The main class
  */
 
 public class Breakout {

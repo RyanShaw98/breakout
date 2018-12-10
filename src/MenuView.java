@@ -1,11 +1,17 @@
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Creates and displays the menu that obtains the players name and desired difficulty.
+ */
 class MenuView extends JComponent implements Settings {
 
     JTextField nameTField;
     ButtonGroup bg;
 
+    /**
+     * Constructor that adds a title, text field, radios buttons and play button to the component.
+     */
     MenuView() {
         setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
@@ -13,6 +19,7 @@ class MenuView extends JComponent implements Settings {
         gbc.gridy = 0;
         gbc.fill = GridBagConstraints.HORIZONTAL;
 
+        // Create title
         JLabel titleLabel = new JLabel("BREAKOUT", SwingConstants.CENTER);
         add(titleLabel, gbc);
         titleLabel.setForeground(Color.WHITE);
@@ -20,6 +27,7 @@ class MenuView extends JComponent implements Settings {
 
         gbc.insets = new Insets(50, 0, 0, 0);
 
+        // Create name tag and input field
         JLabel nameLabel = new JLabel("Name:");
         add(nameLabel, gbc);
         nameLabel.setForeground(Color.WHITE);
@@ -36,6 +44,7 @@ class MenuView extends JComponent implements Settings {
 
         gbc.insets = new Insets(50, 0, 0, 0);
 
+        // Create difficulty tag and radio buttons
         JLabel difficultyLabel = new JLabel("Difficulty:");
         add(difficultyLabel, gbc);
         difficultyLabel.setForeground(Color.WHITE);
@@ -75,7 +84,8 @@ class MenuView extends JComponent implements Settings {
 
         gbc.insets = new Insets(50, 0, 0, 0);
 
-        JButton startBtn = new JButton("Start");
+        // Creates play button
+        JButton startBtn = new JButton("Play");
         startBtn.addActionListener(new InputMouseHandler(this));
         startBtn.setBackground(Color.BLACK);
         startBtn.setForeground(Color.WHITE);
