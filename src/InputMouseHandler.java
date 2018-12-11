@@ -23,6 +23,7 @@ class InputMouseHandler implements ActionListener {
      * remove any leading and trailing white space. Once the program is satisfied with the name
      * it will remove the menu component from the frame and add a new 'GameView' component which
      * will display the game.
+     *
      * @param e
      */
     public void actionPerformed(ActionEvent e) {
