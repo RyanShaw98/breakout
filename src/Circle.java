@@ -42,6 +42,7 @@ class Circle extends Shape implements Settings {
 
     /**
      * Changes the x direction of the ball.
+     *
      * @param x current direction of the ball in regards to the x-axis.
      */
     void setDirectionX(int x) {
@@ -50,6 +51,7 @@ class Circle extends Shape implements Settings {
 
     /**
      * Changes the y direction of the ball.
+     *
      * @param y current direction of the ball in regards to the y-axis.
      */
     void setDirectionY(int y) {

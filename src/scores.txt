@@ -5,7 +5,10 @@ Brian  5.2
 Owen  3.9
 Harry  2.6
 Zia  15.0
+<<<<<<< HEAD
 Carli 25.0
+=======
+>>>>>>> 78021e0fa06708fb7347a8cc16901d94f5d89bfc
 Ryan Shaw 1605008 16.0
 Simon 26.0
 Michael Scott 2.0
@@ -15,3 +18,11 @@ Ryan  4.0
 Ryan  14.0
 Ryan  1.5
 Ryan Shaw  24.0
+<<<<<<< HEAD
+=======
+Ryan  3.0
+Ryan  18.2
+Ryan  127.0
+Ryan 117.0
+Ryan  4.5
+>>>>>>> 78021e0fa06708fb7347a8cc16901d94f5d89bfc

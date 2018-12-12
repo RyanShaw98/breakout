@@ -132,7 +132,7 @@ public class GameView extends JComponent implements Settings {
     }
 
     /**
-     * Calculates the final score by multiplying it by a value that corresponds to the difficulty the player selected from the menu.
+     * Calculates and formats the final score by multiplying it by a value that corresponds to the difficulty the player selected from the menu.
      *
      * @param difficulty the player selected difficulty.
      * @param score      the final score of the player before multiplication.
@@ -204,11 +204,11 @@ public class GameView extends JComponent implements Settings {
 
         g.drawString(allTimeMsg, (FRAME_WIDTH - g.getFontMetrics().stringWidth(allTimeMsg) - HOR_INSET) / 2, (int) (FRAME_HEIGHT * (LAST_GAME_STATS_POS_Y + 0.1)));
 
-        LeaderBoard leaderboard = new LeaderBoard(playerName, score);
-        leaderboard.saveScore();
+        LeaderBoard leaderBoard = new LeaderBoard(playerName, score);
+        leaderBoard.saveScore();
 
         int colourCount = 0;
-        ArrayList<ArrayList<String>> leaderBoardScores = leaderboard.getTopTen();
+        ArrayList<ArrayList<String>> leaderBoardScores = leaderBoard.getTopTen();
 
         double leaderBoardMsgPosY = LEADER_BOARD_POS_Y;
         int position = 1;

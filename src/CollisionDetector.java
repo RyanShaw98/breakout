@@ -66,8 +66,9 @@ class CollisionDetector implements Settings {
     /**
      * Sets the x and y directional values of the ball depending on which brick face (top, left, bottom, right)
      * and which part of the face (top side or bottom side, left side or right side) the ball collided with.
-     * @param x co-ordinate of the ball.
-     * @param y co-ordinate of the ball.
+     *
+     * @param x     co-ordinate of the ball.
+     * @param y     co-ordinate of the ball.
      * @param brick game brick.
      */
     private void setBallDirection(double x, double y, Square brick) {
@@ -93,6 +94,7 @@ class CollisionDetector implements Settings {
 
     /**
      * Checks to see if the ball has collided with a brick; if it has, then it sets the directional values of the ball using the 'setBallDirection' method.
+     *
      * @return a boolean value where true is the ball has collided with a brick and false where the ball has not collided with a brick.
      */
     boolean checkCollisionBallAndBrick() {
