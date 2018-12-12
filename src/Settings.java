@@ -31,6 +31,12 @@ public interface Settings {
     int SQUARE_COLUMNS = 5;
     double SQUARE_SIZE = ((double) FRAME_WIDTH * 0.9) / (double) SQUARE_ROWS;
 
+    // Triangle settings
+    int SIDE_LENGTH = 20;
+
+    // Pie settings
+    int DIAMETER = 20;
+
     // File settings
     String FILE_PATH = "src/scores.txt";
 
