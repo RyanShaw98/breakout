@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38356b7e-d9d0-4a98-9556-43aa3ac55f04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DisplayLeaderBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/Circle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Breakout/CollisionDetector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/CollisionDetector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/GameFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/GameFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/GameView$ScheduleTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/GameView$ScheduleTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/GameView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/GameView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/InputKeyHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/InputKeyHandler$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/InputKeyHandler$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/InputKeyHandler$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/InputKeyHandler$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/InputKeyHandler$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/InputKeyHandler$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/InputKeyHandler$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/InputKeyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/InputKeyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/InputMouseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/InputMouseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/LeaderBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/LeaderBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/ListComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/ListComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/MenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/MenuView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Breakout/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/Rectangle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Breakout/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/Settings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Breakout/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/Square.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Breakout/scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Breakout/scores.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeaderBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeaderBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/scores.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,78 +39,65 @@
     <session id="1024829849">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="43" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="43" />
+          <entry key="PLAIN_TEXT" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="8152" />
+          <entry key="txt" value="109" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="8152" />
+          <entry key="PLAIN_TEXT" value="109" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GameView.java">
+      <file leaf-file-name="Breakout.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Breakout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListComparator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ListComparator.java">
+      <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="187">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Circle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Circle.java">
+      <file leaf-file-name="Pie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MenuView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Settings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeaderBoard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LeaderBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -104,8 +105,26 @@
       <file leaf-file-name="Square.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Square.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            <state relative-caret-position="238">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Settings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scores.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scores.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -135,15 +154,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/scores.txt" />
-        <option value="$PROJECT_DIR$/src/Shape.java" />
-        <option value="$PROJECT_DIR$/src/Square.java" />
         <option value="$PROJECT_DIR$/src/DisplayLeaderboard.java" />
-        <option value="$PROJECT_DIR$/src/DisplayLeaderBoard.java" />
-        <option value="$PROJECT_DIR$/src/Settings.java" />
-        <option value="$PROJECT_DIR$/src/GameView.java" />
+        <option value="$PROJECT_DIR$/src/shapes/Circle.java" />
+        <option value="$PROJECT_DIR$/src/MenuView.java" />
         <option value="$PROJECT_DIR$/src/LeaderBoard.java" />
+        <option value="$PROJECT_DIR$/src/Breakout.java" />
+        <option value="$PROJECT_DIR$/src/Circle.java" />
+        <option value="$PROJECT_DIR$/src/GameFrame.java" />
+        <option value="$PROJECT_DIR$/src/GameView.java" />
+        <option value="$PROJECT_DIR$/src/CollisionDetector.java" />
+        <option value="$PROJECT_DIR$/src/DisplayLeaderBoard.java" />
+        <option value="$PROJECT_DIR$/src/InputKeyHandler.java" />
+        <option value="$PROJECT_DIR$/src/InputMouseHandler.java" />
         <option value="$PROJECT_DIR$/src/ListComparator.java" />
+        <option value="$PROJECT_DIR$/src/Shape.java" />
+        <option value="$PROJECT_DIR$/src/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/scores.txt" />
+        <option value="$PROJECT_DIR$/src/Square.java" />
+        <option value="$PROJECT_DIR$/src/Pie.java" />
+        <option value="$PROJECT_DIR$/src/Triangle.java" />
+        <option value="$PROJECT_DIR$/src/Settings.java" />
       </list>
     </option>
   </component>
@@ -157,17 +187,17 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,12 +214,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544400415979" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -212,6 +244,9 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -220,7 +255,7 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -228,6 +263,9 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -238,7 +276,7 @@
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
@@ -250,6 +288,9 @@
       <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
@@ -269,31 +310,38 @@
       <updated>1544115559677</updated>
       <workItem from="1544115560763" duration="59000" />
       <workItem from="1544187933940" duration="11351000" />
+      <workItem from="1544199955804" duration="12000" />
+      <workItem from="1544360837635" duration="172000" />
+      <workItem from="1544361023263" duration="10500000" />
+      <workItem from="1544440208404" duration="628000" />
+      <workItem from="1544451512701" duration="5170000" />
+      <workItem from="1544540699579" duration="14000" />
+      <workItem from="1544612178950" duration="914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11410000" />
+    <option name="totallyTimeSpent" value="28820000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32943678" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3286334" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.32731137" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49946696" weight="0.32624868" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.111979164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.102604166" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -306,7 +354,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.329718" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,153 +364,145 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Breakout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="3" selection-start-column="46" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputMouseHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputKeyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/util/TimerTask.java" />
+    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/util/Timer.java" />
+    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/lang/NumberFormatException.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.base/java/lang/String.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.base/java/util/Timer.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.desktop/java/awt/Graphics.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.base/java/util/TimerTask.java" />
     <entry file="file://$PROJECT_DIR$/src/GameFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DisplayLeaderBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/util/TimerTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="187">
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CollisionDetector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1131">
-          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        <state relative-caret-position="1598">
+          <caret line="94" column="83" selection-start-line="94" selection-start-column="83" selection-end-line="94" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scores.txt">
+    <entry file="file://$PROJECT_DIR$/src/DisplayLeaderBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="51">
+          <caret line="3" column="65" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/util/Timer.java">
+    <entry file="file://$PROJECT_DIR$/src/ListComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="309" column="27" lean-forward="true" selection-start-line="309" selection-start-column="27" selection-end-line="309" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MenuView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        <state relative-caret-position="221">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Circle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="318">
+          <caret line="59" column="83" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeaderBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="51">
+          <caret line="3" column="96" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GameView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="-571">
+          <caret line="108" column="31" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/lang/NumberFormatException.java">
+    <entry file="file://$PROJECT_DIR$/src/InputMouseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="221">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ListComparator.java">
+    <entry file="file://$PROJECT_DIR$/src/InputKeyHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="1">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MenuView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="88" column="49" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeaderBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="68" column="120" selection-start-line="68" selection-start-column="120" selection-end-line="68" selection-end-column="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Breakout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scores.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
